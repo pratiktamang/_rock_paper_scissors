@@ -124,6 +124,7 @@ function resetGameButton() {
   paperBtn.classList.add("hidden");
   scissorsBtn.classList.add("hidden");
   playAgainBtn.classList.remove("hidden");
+  resultText.innerHTML = "Choose Your Weapon Wisely";
   userScoreNum.innerHTML = 0;
   compScoreNum.innerHTML = 0;
   playAgainBtn.addEventListener("click", () => {
