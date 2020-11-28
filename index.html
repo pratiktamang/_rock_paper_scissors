@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./rockpaperscissors.css" media="screen"/>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <!-- single dot its within same foler. two dots, parent folder/different folder-->
+
+<result>
+    <div id="result" class="roundresultText">Choose Your Weapon Wisely
+    </div>
+</result>    
+<section id ="replaygame" class="initialchoices">
+    <button id = "rock" class = "rockBtn choiceButtons" onClick="round('rock');">Rock</button>
+    <button id = "paper" class = "paperBtn choiceButtons" onClick="round('paper');">Paper</button>
+    <button id = "scissors" class = "scissorsBtn choiceButtons" onClick="round('scissors');">Scissors</button>
+    <button id ="replayButton" class="playAgainButton hidden" onClick="replayGame();">Play Again</button>
+</section>
+<section class = "score">
+    <div class="user">
+        <div class = "usertext">YOU</div>
+        <div id="scoreuser"class ="userscore">0</div>
+    </div>
+    <div class ="computer">
+        <div class = "compscore comptext userscore">COMPUTER</div>
+        <div id ="scorecomputer"class="userscore">0</div>
+    </div>   
+</section>
+<section class ="roundresult">
+    <div>
+        <img id="user_result_img" src="">
+        <!--<img id ="user_rock_img" class="round_result_img" src="./user rock.png">
+        <img id ="user_hand_img" class="round_result_img" src ="./user hand.png">
+        <img id ="user_scissors_img" class="round_result_img" src ="./user scissors.png">-->
+    </div>
+    <div>
+        <img id="comp_result_img" src="">
+        <!--<img id ="comp_scissors_img" class="round_result_img" src="./comp scissors.png">
+        <img id ="comp_hand_img" class="round_result_img" src="./comp hand.png">
+        <img id ="comp_rock_img" class="round_result_img" src="./comp rock.png">-->
+    </div>
+    
+</section>
+    
+   
+
+    <script src="./rockpaperscissors.js"></script>
+</body>
+</html>
