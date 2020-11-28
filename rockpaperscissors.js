@@ -124,9 +124,9 @@ function resetGameButton() {
   paperBtn.classList.add("hidden");
   scissorsBtn.classList.add("hidden");
   playAgainBtn.classList.remove("hidden");
-  userScoreNum.innerHTML = 0;
-  compScoreNum.innerHTML = 0;
   playAgainBtn.addEventListener("click", () => {
+    userScoreNum.innerHTML = 0;
+    compScoreNum.innerHTML = 0;
     rockBtn.classList.remove("hidden");
     paperBtn.classList.remove("hidden");
     scissorsBtn.classList.remove("hidden");
